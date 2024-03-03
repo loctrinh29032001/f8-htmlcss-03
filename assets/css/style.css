@@ -279,6 +279,7 @@ a {
 }
 
 .service-item:hover {
+    transform: translateX(-10px);
     position: relative;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
