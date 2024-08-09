@@ -92,6 +92,12 @@
         <!-- Reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -147,7 +153,12 @@
                 <!-- Hero -->
                 <section class="hero">
                     <section class="hero__content">
-                        <h1 class="hero__heading">
+                        <h1
+                            class="hero__heading"
+                            data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
                             Exceptional dental care for all ages.
                         </h1>
                         <p class="hero__desc">
@@ -169,11 +180,13 @@
                                 src="./assets/img/hero-01.jpg"
                                 alt=""
                                 class="hero__img"
+                                data-aos="flip-left"
                             />
                             <img
                                 src="./assets/img/hero-02.jpg"
                                 alt=""
                                 class="hero__img"
+                                data-aos="flip-right"
                             />
                         </figure>
                     </div>
@@ -197,6 +210,7 @@
                                 src="./assets/img/hero-01.jpg"
                                 alt=""
                                 class="service__img"
+                                data-aos="zoom-out-right"
                             />
                         </figure>
                         <div>
@@ -488,6 +502,8 @@
                                 src="./assets/img/mobileapp.png"
                                 alt=""
                                 class="install__img"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="center-bottom"
                             />
                         </figure>
                         <section class="install__content">
@@ -805,5 +821,9 @@
                 </div>
             </div>
         </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
